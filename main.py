@@ -1,18 +1,6 @@
 from datetime import datetime
 
 
-class Simulation:
-    def create_user(self):
-        pass
-
-    def create_games(self):
-        pass
-
-    def start_simulation(self):
-        pass
-
-
-
 class CustomerManager:
     def customer(self):
         return []
@@ -96,7 +84,7 @@ class ProfileCustomer:
         self.shopping_cart.append(product)
 
     def purchase_product(self):
-        pass
+        return "Purchase Completed."
         
 
 
@@ -129,7 +117,7 @@ class Catalog:
         return None
 
     def filter(self, criteria):
-        pass
+        return [self.product for self.product in self.product if self.product.genre == criteria]
 
 
 
